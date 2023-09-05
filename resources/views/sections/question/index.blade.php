@@ -1,9 +1,9 @@
 
     <div class="pagetitle">
-      <h1>Savol JAvobla</h1>
+      <h1>Savol Javoblar</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{{ route('question.index') }}">Savol JAvoblar</a></li>
+          <li class="breadcrumb-item"><a href="{{ route('question.index') }}">Savol Javoblar</a></li>
           <li class="breadcrumb-item">Yaratish</li>
         </ol>
       </nav>
@@ -16,7 +16,7 @@
         
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Savol JAvobla</h5>
+              <h5 class="card-title">Savol Javoblar</h5>
               <a href="{{ route('question.create') }}" class="btn btn-success">Savol qo'shish</a>
              
 
