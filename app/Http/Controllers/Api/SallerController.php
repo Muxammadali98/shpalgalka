@@ -45,7 +45,7 @@ class SallerController extends Controller
         $saller = Saller::with(['prizs','sales'])->find($id);
         $this->validate($request,[
             'email' => 'email|unique:sallers,email,'.$saller->id,
-            'phone'=>'phone|unique:sallers,phone,'.$saller->id,
+            'phone'=>'unique:sallers,phone,'.$saller->id,
         ]);
 
         $data = $request->all();
