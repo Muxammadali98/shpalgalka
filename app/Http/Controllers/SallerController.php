@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SallerRequest;
 use App\Models\Prize;
 use App\Models\Prize_Saller;
+use App\Models\Sale;
 use App\Models\Saller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -30,16 +32,7 @@ class SallerController extends Controller
 
 
 
-    public function store(Request $request){
-
-        $this->validate($request,[
-            'name'=>'required',
-            'surname'=>'required',
-            'password' => 'required|same:confirm_password',
-            'confirm_password' => 'required',
-            'phone'=>'required|unique:sallers,phone',
-            'email'=>'unique:sallers,email'
-        ]);
+    public function store(SallerRequest $request){
 
         $data = $request->all();
         $data['password'] = Hash::make($request->password);
@@ -59,7 +52,7 @@ class SallerController extends Controller
         $data = $request->all();
 
 
-        if(empty($request->apssword)){
+        if(empty($request->password)){
             $data['password'] = $saller->password;
         }else{
             $data['password'] = Hash::make($request->password);
@@ -88,6 +81,8 @@ class SallerController extends Controller
 
 
     public function destroy(Saller $saller) {
+
+            Sale::where('saller_id',$saller->id)->delete();
 
             $saller->delete();
 

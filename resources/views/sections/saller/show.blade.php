@@ -148,12 +148,12 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3">
+                    {{-- <div class="row mb-3">
                       <label for="Address" class="col-md-4 col-lg-3 col-form-label">Joriy Parol</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="old_password" type="text" class="form-control" id="Address" >
                       </div>
-                    </div>
+                    </div> --}}
 
                     <div class="row mb-3">
                       <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Yangi Parol</label>
@@ -162,12 +162,12 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3">
+                    {{-- <div class="row mb-3">
                       <label for="Password" class="col-md-4 col-lg-3 col-form-label">Parol Nusxasi</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="confirm_password" type="password" class="form-control" id="Password">
                       </div>
-                    </div>
+                    </div> --}}
 
 
                       <div class="row mb-3">

@@ -31,7 +31,7 @@
                 <tbody>
                   @foreach ($sales as $sale)
                     <tr>
-                      <th scope="row">{{ $sale->id }}</th>
+                      <th scope="row">{{ $loop->iteration }}</th>
                       <td>{{ $sale->saller?->name }}</td>
                       <td>{{ $sale->phone }}</td>
                       <td>{{ array_sum(array_values(array_column($sale->products->toArray(), 'count'))) .' ta' }}</td>

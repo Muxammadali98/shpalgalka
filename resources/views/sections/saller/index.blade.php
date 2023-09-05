@@ -32,7 +32,7 @@
                   @foreach ($sallers as $saller)
                       
                     <tr>
-                      <th scope="row">{{ $saller->id }}</th>
+                      <th scope="row">{{ $loop->iteration  }}</th>
                       <td>{{ $saller->name }}</td>
                       <td>{{ $saller->phone }}</td>
                       <td>{{ $saller->email }}</td>

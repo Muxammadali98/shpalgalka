@@ -36,7 +36,7 @@
                 <tbody>
                   @foreach ($questions as $question)
                     <tr>
-                      <th scope="row">{{ $question->id }}</th>
+                      <th scope="row">{{ $loop->iteration }}</th>
                       <td>
                       @php
                           

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('sale__products', function (Blueprint $table) {
             $table->id();
-            $table->string('sale_id');
+            $table->bigInteger('sale_id');
+            $table->foreign('sale_id')->references('id')->on('sales')->onDelete('cascade');
             $table->string('product_id');
             $table->string('status')->default('0');
             $table->string('date')->nullable();

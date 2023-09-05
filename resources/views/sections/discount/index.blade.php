@@ -37,7 +37,7 @@
                 <tbody>
                   @foreach ($discounts as $discount)
                     <tr>
-                      <th scope="row">{{ $discount->id }}</th>
+                      <th scope="row">{{ $loop->iteration }}</th>
                       <td> <img src="/images/{{ $discount->image}}" style="height: 100px" alt=""> </td>
                       <td>{{ $discount->title }}</td>
                       <td>{{ $discount->description }}</td>  

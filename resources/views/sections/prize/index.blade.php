@@ -34,7 +34,7 @@
                 <tbody>
                   @foreach ($prizes as $prize)
                     <tr>
-                      <th scope="row">{{ $prize->id }}</th>
+                      <th scope="row">{{ $loop->iteration }}</th>
                       <td> <img src="/images/{{ $prize->image}}" style="height: 100px" alt=""> </td>
                       <td>{{ $prize->title }}</td>
                       <td>{{ $prize->description }}</td>

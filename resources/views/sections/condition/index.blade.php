@@ -33,7 +33,7 @@
                 <tbody>
                   @foreach ($conditions as $condition)
                     <tr>
-                      <th scope="row">{{ $condition->id }}</th>
+                      <th scope="row">{{ $loop->iteration }}</th>
                       <td> {{ $condition?->discount?->title }}</td>
                       <td>{{ $condition->text }}</td>
                       <td> <a href="{{ route('condition.edit',$condition->id) }}" class="btn btn-warning">O'zgartirish</a></td>
