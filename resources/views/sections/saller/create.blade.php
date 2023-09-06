@@ -68,23 +68,23 @@
                     @csrf
                     <div class="col-12">
                       <label for="yourName" class="form-label">Ism</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
+                      <input type="text" name="name" class="form-control" id="yourName" value="{{ old('name') }}" required>
                       <div class="invalid-feedback">Iltimos ism kiriting!</div>
                     </div>
                     <div class="col-12">
                       <label for="yourName" class="form-label">Familya</label>
-                      <input type="text" name="surname" class="form-control" id="yourName" required>
+                      <input type="text" name="surname" class="form-control" value="{{ old('surname') }}" id="yourName" required>
                       <div class="invalid-feedback">Iltimos familya kiriting!</div>
                     </div>
                     <div class="col-12">
                       <label for="yourName" class="form-label">Rasim</label>
-                      <input type="file" name="image" class="form-control" id="yourName" >
+                      <input type="file" name="image" class="form-control"  id="yourName" >
                       <div class="invalid-feedback">Iltimos rasim kiriting!</div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Email</label>
-                      <input type="email" name="email" class="form-control" id="yourEmail" required>
+                      <input type="email" name="email" class="form-control" value="{{ old('email') }}" id="yourEmail" required>
                       <div class="invalid-feedback">Iltimos email kiriting!</div>
                       @error('email')
                           <div class="alert alert-danger">{{ $message }}</div>
@@ -94,7 +94,7 @@
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Telefon raqami</label>
                       <div class="input-group has-validation">
-                        <input type="text" name="phone" class="form-control" id="yourPassword" required>
+                        <input type="text" name="phone" class="form-control" value="{{ old('phone') }}" id="yourPassword" required>
                         <div class="invalid-feedback">Iltimos telefon raqamini kiriting!</div>
                       </div>
                       @error('phone')
@@ -104,7 +104,7 @@
           
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Parol</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <input type="password" name="password" class="form-control" value="{{ old('password') }}" id="yourPassword" required>
                       <div class="invalid-feedback">Iltimos parol kiriting!</div>
                       @error('password')
                           <div class="alert alert-danger">{{ $message }}</div>
@@ -113,7 +113,7 @@
           
                     <div class="col-12">
                       <label for="yourPassword" class="form-label"> Qayata Parol</label>
-                      <input type="password" name="confirm_password" class="form-control" id="yourPassword" required>
+                      <input type="password" name="confirm_password" class="form-control" value="{{ old('confirm_password') }}" id="yourPassword" required>
                       <div class="invalid-feedback">Iltimos parolni qayta kiriting!</div>
                       @error('confirm_password')
                           <div class="alert alert-danger">{{ $message }}</div>
