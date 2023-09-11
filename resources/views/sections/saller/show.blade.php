@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-lg-4 " >
                   <h6>Заказы</h6>
-                  <p>{{ count($saller->sales->where('status',0)) }}</p>
+                  <p>{{ count($saller->sales) }}</p>
                 </div> 
                 <div class="col-lg-4 " >
                   <h6>Отказано</h6>
