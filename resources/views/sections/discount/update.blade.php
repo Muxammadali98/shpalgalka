@@ -57,12 +57,7 @@
                   <input type="text" value="{{ $discount->sub_title }}" required name="sub_title" class="form-control">
                 </div>
               </div>
-              <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Corusel text</label>
-                <div class="col-sm-10">
-                  <input type="text" value="{{ $discount->corusel_text }}" required name="corusel_text" class="form-control">
-                </div>
-              </div>
+   
 
               <div class="row mb-3">
                 <label class="col-sm-2 col-form-label">Category</label>

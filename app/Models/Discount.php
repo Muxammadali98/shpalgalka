@@ -15,7 +15,6 @@ class Discount extends Model
         'title',
         'description',
         'category_id',
-        'corusel_text',
         'sub_title'
     ];
 

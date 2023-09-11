@@ -42,7 +42,6 @@ class DiscountController extends Controller
             'title'=>'required',
             'description'=>'required',
             'category_id'=>'required',
-            'corusel_text'=>'required',
             'sub_title'=>'required',
         ]);
 
