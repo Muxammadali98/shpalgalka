@@ -27,7 +27,6 @@
                     <th scope="col">Image</th>
                     <th scope="col">Title</th>
                     <th scope="col">Description</th> 
-                    <th scope="col">Corusel Text</th> 
                     <th scope="col">Sub Title</th> 
                     <th scope="col">Category</th> 
                     <th scope="col"></th>
@@ -41,7 +40,6 @@
                       <td> <img src="/images/{{ $discount->image}}" style="height: 100px" alt=""> </td>
                       <td>{{ $discount->title }}</td>
                       <td>{{ $discount->description }}</td>  
-                      <td>{{ $discount->corusel_text }}</td>
                       <td>{{ $discount->sub_title }}</td>
                       <td>                      
                         @php
