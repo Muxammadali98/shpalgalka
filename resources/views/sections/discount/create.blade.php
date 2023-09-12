@@ -51,12 +51,48 @@
                   <input type="text" required name="description" class="form-control">
                 </div>
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
               <div class="row mb-3">
                 <label for="inputPassword" class="col-sm-2 col-form-label">Kichik sarlavxa</label>
                 <div class="col-sm-10">
                   <input type="text" required name="sub_title" class="form-control">
                 </div>
-
+              </div>
 
               <div class="row mb-3">
                 <label class="col-sm-2 col-form-label">Bo'limlar</label>

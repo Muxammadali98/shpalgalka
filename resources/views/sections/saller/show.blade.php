@@ -11,31 +11,35 @@
 
     <section class="section profile">
       <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-6">
 
           <div class="card">
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-              <img src="/images/{{ $saller->image? $saller->image: '1692179496.jpg' }}" alt="Profile" class="rounded-circle">
+              <img src="/images/{{ $saller->image? $saller->image: '1692179496.jpg' }}" style="width: 120px ; height: 120px;" alt="Profile" class="rounded-circle">
               <h2>{{ $saller->name }}</h2>
               <h3>{{ $saller->surname }}</h3>
-              <div class="row" style="width: 300px">
-                <div class="col-lg-4 " >
+              <div class="row" style="width: 450px">
+                <div class="col-lg-3" >
+                  <h6>Barchasi</h6>
+                  <p>{{ count($saller->sales) }}</p>
+                </div> 
+                <div class="col-lg-3 " >
                   <h6>Sotilganlar</h6>
                   <p>{{ count($saller->sales->where('status',1)) }}</p>
                 </div>
-                <div class="col-lg-4 " >
-                  <h6>Buyurtmalr</h6>
-                  <p>{{ count($saller->sales) }}</p>
+                <div class="col-lg-3" >
+                  <h6>Takshiruvda</h6>
+                  <p>{{ count($saller->sales->where('status',0)) }}</p>
                 </div> 
-                <div class="col-lg-4 " >
-                  <h6>Bekor qilinganlar</h6>
+                <div class="col-lg-3" >
+                  <h6>Qaytarilgan</h6>
                   <p>{{ count($saller->sales->where('status',2)) }}</p>
                 </div>
               </div>
               <div class="social-links mt-2 d-flex flex-wrap">
                 @foreach ($saller->prizs as $connect)
-                    <div class="m-3">
-                      <img style="height: 40px" src="/images/{{$connect->prize->image}}" alt="">
+                    <div class="m-3 d-flex flex-column justify-content-center align-items-center " >
+                      <img  style="height: 40px; width: 60px " src="/images/{{$connect->prize->image}}" alt="">
                       <p style="text-align: center " >{{ $connect->prize->title }}</p>
                     </div>
                 @endforeach
@@ -45,7 +49,7 @@
           </div>
         </div>
 
-        <div class="col-xl-8">
+        <div class="col-xl-6">
           <div class="card">
             <div class="card-body pt-3">
               <!-- Bordered Tabs -->
@@ -110,7 +114,7 @@
                     @method('PUT')
                     <div  class="row mb-3">
                       <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foydalanuvchi Rasmi</label>
-                      <div class="col-md-8 col-lg-9">
+                      <div class="col-md-8 col-lg-9   ">
                         <img src="/images/{{ $saller->image? $saller->image: '1692179496.jpg' }}" alt="Profile">
                         <div class="pt-2">
                             <input name="image" type="file" class="form-control" id="fullName">
@@ -186,7 +190,7 @@
 
                 
                         @foreach ($saller->prizs as $connect)
-                            <div class="m-3">
+                            <div class="m-3 ">
                               <img style="height: 40px" src="/images/{{$connect->prize->image}}" alt="">
                               <div >
                                   <p style="text-align: center " >{{ $connect->prize->title }}</p>
