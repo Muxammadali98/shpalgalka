@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Register - NiceAdmin Bootstrap Template</title>
+  <title>Sotuvchi Qo'shish</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
 
   <!-- Favicons -->
   <link href="/assets/img/favicon.png" rel="icon">
@@ -77,8 +78,8 @@
                       <div class="invalid-feedback">Iltimos familya kiriting!</div>
                     </div>
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Rasim</label>
-                      <input type="file" name="image" class="form-control"  id="yourName" >
+                      <label for="custom-file-input" id=".custom-file-label" class="form-label">Rasim</label>
+                      <input type="file" name="image" class="form-control"  id="custom-file-input" >
                       <div class="invalid-feedback">Iltimos rasim kiriting!</div>
                     </div>
 

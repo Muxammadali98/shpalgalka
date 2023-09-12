@@ -24,9 +24,9 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Image</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
+                    <th scope="col">Rasim</th>
+                    <th scope="col">Sarlavxa</th>
+                    <th scope="col">Batafsil ma'lumot</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                   </tr>

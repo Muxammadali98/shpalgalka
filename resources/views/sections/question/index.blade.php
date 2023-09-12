@@ -25,7 +25,7 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Category </th>
+                    <th scope="col">Bo'limlar</th>
                     <th scope="col">Savol</th>
                     <th scope="col">Javob</th>
                     <th scope="col"></th>

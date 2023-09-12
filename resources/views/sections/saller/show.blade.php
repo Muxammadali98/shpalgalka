@@ -1,10 +1,10 @@
 
     <div class="pagetitle">
-      <h1>Profile</h1>
+      <h1>Shaxsy kabinet</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{ route('saller.index') }}">Sotuvchilar</a></li>
-          <li class="breadcrumb-item active">Profile</li>
+          <li class="breadcrumb-item active">Shaxsiy kabinet</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -20,15 +20,15 @@
               <h3>{{ $saller->surname }}</h3>
               <div class="row" style="width: 300px">
                 <div class="col-lg-4 " >
-                  <h6>Продажи</h6>
+                  <h6>Sotilganlar</h6>
                   <p>{{ count($saller->sales->where('status',1)) }}</p>
                 </div>
                 <div class="col-lg-4 " >
-                  <h6>Заказы</h6>
+                  <h6>Buyurtmalr</h6>
                   <p>{{ count($saller->sales) }}</p>
                 </div> 
                 <div class="col-lg-4 " >
-                  <h6>Отказано</h6>
+                  <h6>Bekor qilinganlar</h6>
                   <p>{{ count($saller->sales->where('status',2)) }}</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@
                     @csrf
                     @method('DELETE')
                     <div class="text-center">
-                      <button type="submit" class="btn btn-danger">Delete</button>
+                      <button type="submit" class="btn btn-danger">O'chirish</button>
                     </div>
                   </form><!-- End Profile Edit Form -->
 
@@ -198,7 +198,7 @@
 
                       
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                      <button type="submit" class="btn btn-primary">O'zgarishni Saqlash</button>
                     </div>
                   </form><!-- End Profile Edit Form -->
 

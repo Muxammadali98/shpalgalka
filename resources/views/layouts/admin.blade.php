@@ -225,7 +225,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="{{ route('profile.edit') }}">
                 <i class="bi bi-person"></i>
-                <span>Mening Profilim</span>
+                <span>Mening Hisobim</span>
               </a>
             </li>
             <li>

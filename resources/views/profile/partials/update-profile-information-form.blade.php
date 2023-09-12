@@ -1,11 +1,11 @@
 <section>
     <header>
         <h2 class="text-lg font-medium text-gray-900">
-            {{ __('Profile Information') }}
+            {{ __("Hisob Ma'lumotlari") }}
         </h2>
 
         <p class="mt-1 text-sm text-gray-600">
-            {{ __("Update your account's profile information and email address.") }}
+            {{ __("Hisobingizning profil ma'lumotlari va elektron pochta manzilini yangilang.") }}
         </p>
     </header>
 
@@ -18,15 +18,15 @@
         @method('patch')
 
         <div>
-            <x-input-label for="name" :value="__('Name')" />
+            <x-input-label for="name" :value="__('Ism')" />
             <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
         <!-- Image -->
         <div class="mt-4">
-            <x-input-label for="image" :value="__('Image')" />
-            <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" :value="old('image')" required autocomplete="username" />
+            <x-input-label for="image" :value="__('Rasim')" />
+            <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" :value="old('image')"  autocomplete="username" />
             <x-input-error :messages="$errors->get('image')" class="mt-2" />
         </div>
 
@@ -55,7 +55,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
+            <x-primary-button>{{ __('Saqlash') }}</x-primary-button>
 
             @if (session('status') === 'profile-updated')
                 <p
@@ -64,7 +64,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-gray-600"
-                >{{ __('Saved.') }}</p>
+                >{{ __('Saqlandi.') }}</p>
             @endif
         </div>
     </form>

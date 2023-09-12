@@ -34,32 +34,32 @@
               @csrf
 
               <div class="row mb-3">
-                <label for="inputText" class="col-sm-2 col-form-label">Image</label>
+                <label for="inputText" class="col-sm-2 col-form-label">Rasim</label>
                 <div class="col-sm-10">
                   <input type="file" required name="image" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Title</label>
+                <label for="inputEmail" class="col-sm-2 col-form-label">Sarlavxa</label>
                 <div class="col-sm-10">
                   <input type="text"  required name="title" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Batafsil ma'lumot</label>
                 <div class="col-sm-10">
                   <input type="text" required name="description" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Sub Title</label>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Kichik sarlavxa</label>
                 <div class="col-sm-10">
                   <input type="text" required name="sub_title" class="form-control">
                 </div>
 
 
               <div class="row mb-3">
-                <label class="col-sm-2 col-form-label">Category</label>
+                <label class="col-sm-2 col-form-label">Bo'limlar</label>
                 <div class="col-sm-10">
                   <select name="category_id" class="form-select" aria-label="Default select example">
                     @foreach ($categories as $category){

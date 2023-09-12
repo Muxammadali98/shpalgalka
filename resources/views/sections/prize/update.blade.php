@@ -34,19 +34,19 @@
               @csrf
               @method('PUT')
               <div class="row mb-3">
-                <label for="inputText" class="col-sm-2 col-form-label">Image</label>
+                <label for="inputText" class="col-sm-2 col-form-label">Rasim</label>
                 <div class="col-sm-10">
                   <input type="file" name="image" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Title</label>
+                <label for="inputEmail" class="col-sm-2 col-form-label">Sarlavxa</label>
                 <div class="col-sm-10">
                   <input type="text" required name="title" value="{{ $prize->title }}" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Batafsil ma'lumot</label>
                 <div class="col-sm-10">
                   <input type="text" value="{{ $prize->description }}" required name="description" class="form-control">
                 </div>

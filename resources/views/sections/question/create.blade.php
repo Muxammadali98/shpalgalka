@@ -36,7 +36,7 @@
  
 
               <div class="row mb-3">
-                <label class="col-sm-2 col-form-label">Category</label>
+                <label class="col-sm-2 col-form-label">Bo'limlar</label>
                 <div class="col-sm-10">
                   <select name="category_id" class="form-select" aria-label="Default select example">
 

@@ -1,5 +1,5 @@
 <div class="pagetitle">
-    <h1>Form Elements</h1>
+    <h1>Chegirmalar</h1>
     <div class="d-flex justify-content-between">
       <div class="col-md-6">
         <div class="title mb-30">
@@ -27,32 +27,32 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">General Form Elements</h5>
+            <h5 class="card-title">Chegirmalar</h5>
 
             <!-- General Form Elements -->
             <form action="{{ route('discount.update',$discount->id) }}"  method="POST" enctype="multipart/form-data">
               @csrf
               @method('PUT')
               <div class="row mb-3">
-                <label for="inputText" class="col-sm-2 col-form-label">Image</label>
+                <label for="inputText" class="col-sm-2 col-form-label">Rasim</label>
                 <div class="col-sm-10">
                   <input type="file" name="image" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Title</label>
+                <label for="inputEmail" class="col-sm-2 col-form-label">Sarlavxa</label>
                 <div class="col-sm-10">
                   <input type="text"  name="title" required value="{{ $discount->title }}" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Batafsil ma'lumot</label>
                 <div class="col-sm-10">
                   <input type="text" value="{{ $discount->description }}" required name="description" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Sub title</label>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Kichik sarlavxa </label>
                 <div class="col-sm-10">
                   <input type="text" value="{{ $discount->sub_title }}" required name="sub_title" class="form-control">
                 </div>
@@ -60,7 +60,7 @@
    
 
               <div class="row mb-3">
-                <label class="col-sm-2 col-form-label">Category</label>
+                <label class="col-sm-2 col-form-label">Bo'limlar</label>
                 <div class="col-sm-10">
                   <select name="category_id" class="form-select" aria-label="Default select example">
                     @foreach ($categories as $category){
