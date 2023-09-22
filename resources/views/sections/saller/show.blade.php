@@ -28,7 +28,7 @@
                   <p>{{ count($saller->sales->where('status',1)) }}</p>
                 </div>
                 <div class="col-lg-3" >
-                  <h6>Takshiruvda</h6>
+                  <h6>Tekshiruvda</h6>
                   <p>{{ count($saller->sales->where('status',0)) }}</p>
                 </div> 
                 <div class="col-lg-3" >

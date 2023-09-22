@@ -16,19 +16,20 @@
         <div>
             <x-input-label for="current_password" :value="__('Joriy Parol')" />
             <x-text-input id="current_password" name="current_password" type="password" class="mt-1 block w-full" autocomplete="current-password" />
-            <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
+            <span class="text-sm text-red-600 space-y-1"> @error('current_password') {{ $message }}  @enderror</span>
         </div>
 
         <div>
             <x-input-label for="password" :value="__('Yangi Parol')" />
             <x-text-input id="password" name="password" type="password" class="mt-1 block w-full" autocomplete="new-password" />
-            <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
+            <span class="text-sm text-red-600 space-y-1"> @error('password') {{ $message }}  @enderror</span>
+           
         </div>
 
         <div>
             <x-input-label for="password_confirmation" :value="__('Yangi Parolni Qayta kiriting')" />
             <x-text-input id="password_confirmation" name="password_confirmation" type="password" class="mt-1 block w-full" autocomplete="new-password" />
-            <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
+            <span class="text-sm text-red-600 space-y-1"> @error('password_confirmation') {{ $message }}  @enderror</span>
         </div>
 
         <div class="flex items-center gap-4">
