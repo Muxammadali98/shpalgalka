@@ -21,7 +21,8 @@ class AuthRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
+        return 
+        [
 
             'password' => 'required',
             'current_password' => 'required',
