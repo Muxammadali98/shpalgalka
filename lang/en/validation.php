@@ -101,7 +101,7 @@ return [
         'array' => 'The :attribute field must have at least :min items.',
         'file' => 'The :attribute field must be at least :min kilobytes.',
         'numeric' => 'The :attribute field must be at least :min.',
-        'string' => "Bu:attribute maydoni kamida :min belgidan iborat bo'lishi kerak.",
+        'string' => "Bu :attribute maydoni kamida :min belgidan iborat bo'lishi kerak.",
     ],
     'min_digits' => 'The :attribute field must have at least :min digits.',
     'missing' => 'The :attribute field must be missing.',
