@@ -79,10 +79,10 @@
                     </div>
                     <div class="col-12">
                       <label for="custom-file-input" id=".custom-file-label" class="form-label">Rasim</label>
-                      {{-- <input type="file" name="image" class="form-control"  id="custom-file-input" > --}}
+                      <input type="file" name="image" class="form-control"  id="custom-file-input" >
 
-                      <input type="file"  id="custom-file-input" style="display: none">
-                      <label for="custom-file-input" class="custom-file-label  form-control">Rasim tanlang...</label>
+                      {{-- <input type="file"  id="custom-file-input" style="display: none">
+                      <label for="custom-file-input" class="custom-file-label  form-control">Rasim tanlang...</label> --}}
                       
                       <div class="invalid-feedback">Iltimos rasim kiriting!</div>
                     </div>
