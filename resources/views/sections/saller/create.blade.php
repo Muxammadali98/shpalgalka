@@ -99,7 +99,7 @@
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Telefon raqami</label>
                       <div class="input-group has-validation">
-                        <input type="number" name="phone" class="form-control" value="+998 {{ old('phone') }}" id="yourPassword" required>
+                        <input type="number" name="phone" class="form-control" value="{{ old('phone') }}" id="yourPassword" required>
                         <div class="invalid-feedback">Iltimos telefon raqamini kiriting!</div>
                       </div>
                       @error('phone')

@@ -36,7 +36,11 @@
                 <tbody>
                   @foreach ($questions as $question)
                     <tr>
-                      <th scope="row">{{ $loop->iteration }}</th>
+                      <td scope="row">
+                        <div style="width: 30px; display: inline-block">
+                        {{ $loop->iteration }}
+                        </div>
+                      </td>
                       <td>
                       @php
                           

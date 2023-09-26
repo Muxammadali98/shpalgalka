@@ -127,28 +127,28 @@
                     <div class="row mb-3">
                       <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Ism</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="name" type="text" class="form-control" id="fullName" value="{{ $saller->name }}">
+                        <input name="name" type="text" required class="form-control" id="fullName" value="{{ $saller->name }}">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="company" class="col-md-4 col-lg-3 col-form-label">Familya</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="surname" type="text" class="form-control" id="company" value="{{ $saller->surname }}">
+                        <input name="surname" type="text" class="form-control"  requiredid="company" value="{{ $saller->surname }}">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="Job" class="col-md-4 col-lg-3 col-form-label">Tel Raqami</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="phone" type="text" class="form-control" id="Job" value="{{ $saller->phone }}">
+                        <input name="phone" type="number" class="form-control" id="Job" required value="{{ $saller->phone }}">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="email" type="email" class="form-control" id="email" value="{{ $saller->email }}">
+                        <input name="email" type="email" class="form-control" required id="email" value="{{ $saller->email }}">
                       </div>
                     </div>
 
@@ -162,7 +162,7 @@
                     <div class="row mb-3">
                       <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Yangi Parol</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="password" type="password" class="form-control" id="Phone" >
+                        <input name="password" required type="password" class="form-control" id="Phone" >
                       </div>
                     </div>
 
