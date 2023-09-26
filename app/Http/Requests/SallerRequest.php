@@ -26,7 +26,7 @@ class SallerRequest extends FormRequest
             'surname'=>'required',
             'password' => 'required',
             'confirm_password' => 'required|same:password',
-            'phone'=>'required|unique:sallers,phone| min:9 | max:13',
+            'phone'=>'required|unique:sallers,phone| min:12 | max:12',
             'email'=>'unique:sallers,email'
         ];
     }
