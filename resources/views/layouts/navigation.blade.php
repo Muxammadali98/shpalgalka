@@ -22,7 +22,7 @@
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <div>
-                    <img style="width: 45px; height: 40px;" src="/images/{{  auth()->user()->image?auth()->user()->image : 'profile-icon.png'}}" alt="Profile" class="rounded-circle">
+                    <img style="width: 40px; height: 40px; border-radius: 50%" src="/images/{{  auth()->user()->image?auth()->user()->image : 'profile-icon.png'}}" alt="Profile" class="rounded-circle">
                 </div>
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
