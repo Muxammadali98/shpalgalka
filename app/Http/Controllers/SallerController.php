@@ -52,6 +52,13 @@ class SallerController extends Controller
         $data = $request->all();
 
 
+        if(!empty($request->phone)){
+            $this->validate($request,[
+                'phone'=>'numeric| max:12 | min:12'
+            ]);
+        }
+
+
         if(empty($request->password)){
             $data['password'] = $saller->password;
         }else{

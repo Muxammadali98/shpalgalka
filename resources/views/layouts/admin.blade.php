@@ -210,7 +210,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img style="width: 40px; height: 40px; border-radius: 50%" src="/images/{{  auth()->user()->image?auth()->user()->image : 'profile-icon.png'}}" alt="Profile" class="rounded-circle">
+            <img style="width: 50px; height: 50px; border-radius: 50%" src="/images/{{  auth()->user()->image?auth()->user()->image : 'profile-icon.png'}}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
           </a><!-- End Profile Iamge Icon -->
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">

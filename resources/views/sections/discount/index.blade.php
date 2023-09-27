@@ -29,8 +29,8 @@
                     <th scope="col">Batafsil ma'lumot</th> 
                     <th scope="col">Kichik sarlavxa</th> 
                     <th scope="col">Bo'limlar</th> 
-                    <th scope="col"></th>
-                    <th scope="col"></th>
+                    <td scope="col"></td>
+                    <td scope="col"></td>
                   </tr>
                 </thead>
                 <tbody>

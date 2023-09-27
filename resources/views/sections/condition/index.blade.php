@@ -26,8 +26,8 @@
                     <th scope="col">#</th>
                     <th scope="col">Chegirma </th>
                     <th scope="col">Text</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
+                    <td scope="col"></td>
+                    <td scope="col"></td>
                   </tr>
                 </thead>
                 <tbody>

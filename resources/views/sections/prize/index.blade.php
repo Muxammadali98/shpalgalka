@@ -27,8 +27,8 @@
                     <th scope="col">Rasim</th>
                     <th scope="col">Sarlavxa</th>
                     <th scope="col">Batafsil ma'lumot</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
+                    <td scope="col"></td>
+                    <td scope="col"></td>
                   </tr>
                 </thead>
                 <tbody>
