@@ -54,7 +54,7 @@ class SallerController extends Controller
 
         if(!empty($request->phone)){
             $this->validate($request,[
-                'phone'=>'numeric| max:12 | min:12'
+                'phone'=>'numeric| digits:12'
             ]);
         }
 
