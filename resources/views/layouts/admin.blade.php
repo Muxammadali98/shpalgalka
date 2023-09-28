@@ -234,7 +234,7 @@
             <li>
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered"  class="dropdown-item d-flex align-items-center" href="#">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered1"  class="dropdown-item d-flex align-items-center" href="#">
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Chiqish</span>
                 </button>
@@ -310,7 +310,7 @@
      
       <!-- Vertically centered Modal -->
       {{-- <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" >O'chirish</button> --}}
-      <div class="modal fade" id="verticalycentered" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal fade" id="verticalycentered1" tabindex="-1" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
