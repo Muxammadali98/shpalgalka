@@ -28,8 +28,8 @@
                     <th scope="col">Bo'limlar</th>
                     <th scope="col">Savol</th>
                     <th scope="col">Javob</th>
-                    <td scope="col"></td>
-                    <td scope="col"></td>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
          

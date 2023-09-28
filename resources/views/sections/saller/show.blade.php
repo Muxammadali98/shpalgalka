@@ -134,7 +134,7 @@
                     <div class="row mb-3">
                       <label for="company" class="col-md-4 col-lg-3 col-form-label">Familya</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="surname" type="text" class="form-control"  required id="company" value="{{ $saller->surname }}">
+                        <input name="surname" type="text" class="form-control"  required  id="company" value="{{ $saller->surname }}">
                       </div>
                     </div>
 

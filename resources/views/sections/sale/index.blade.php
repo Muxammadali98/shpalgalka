@@ -25,7 +25,7 @@
                     <th scope="col">Sotuvchi</th>
                     <th scope="col">Mijoz Raqami</th>
                     <th scope="col">Umumiy Buyurtmalar </th>
-                    <td scope="col"></td>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
