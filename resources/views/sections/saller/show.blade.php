@@ -90,17 +90,36 @@
                     <div class="col-lg-9 col-md-8">{{ $saller->email }}</div>
                   </div>
        
+                  <div class="card-body">
+     
+                    <!-- Vertically centered Modal -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" class="btn btn-danger">O'chirish</button>
+                    <div class="modal fade" id="verticalycentered" tabindex="-1" style="display: none;" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Foydalanuvchi O'chirilsinmi? </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                            <!-- Profile Edit Form -->
+                            <form action="{{ route('saller.destroy', $saller->id) }}" method="POST" >
+                              @csrf
+                              @method('DELETE')
+                              <div class="text-center">
+                                <button type="submit" class="btn btn-danger">O'chirish</button>
+                              </div>
+                            </form><!-- End Profile Edit Form -->
 
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Vertically centered Modal-->
+      
+                  </div>
 
                   
-                  <!-- Profile Edit Form -->
-                  <form action="{{ route('saller.destroy', $saller->id) }}" method="POST" >
-                    @csrf
-                    @method('DELETE')
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-danger">O'chirish</button>
-                    </div>
-                  </form><!-- End Profile Edit Form -->
 
 
 
@@ -165,7 +184,7 @@
                     <div class="row mb-3">
                       <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Yangi Parol</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="password"  type="password" class="form-control" id="Phone" >
+                        <input name="password" required type="password" class="form-control" id="Phone" >
                       </div>
                     </div>
 

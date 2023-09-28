@@ -52,4 +52,31 @@
             </div>
         </form>
     </x-modal>
+
+
+    <x-modal name="logout" :show="$errors->userDeletion->isNotEmpty()" focusable>
+        <form method="post" action="{{ route('logout') }}" class="p-6">
+            @csrf
+
+            <h2 class="text-lg font-medium text-gray-900">
+                {{ __('Hisobingizdan chiqmoqchimisiz?') }}
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-600">
+                {{ __("Hisobingizdan chiqaningizdan so'ng qayta kirish uchun elekron pochta va parolni terishingiz kerak.") }}
+            </p>
+            <div class="mt-6 flex justify-end">
+                <x-secondary-button x-on:click="$dispatch('close')">
+                    {{ __("To'xtatish") }}
+                </x-secondary-button>
+           
+                <x-danger-button  class="ml-3"
+                        onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                    {{ __('Chiqish') }}
+                </x-danger-button >
+           
+            </div>
+        </form>
+    </x-modal>
 </section>

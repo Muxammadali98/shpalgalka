@@ -234,7 +234,7 @@
             <li>
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button class="dropdown-item d-flex align-items-center" href="#">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered"  class="dropdown-item d-flex align-items-center" href="#">
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Chiqish</span>
                 </button>
@@ -246,6 +246,8 @@
 
       </ul>
     </nav><!-- End Icons Navigation -->
+
+
 
   </header><!-- End Header -->
 
@@ -304,6 +306,37 @@
 
   <main id="main" class="main">
     @yield('content')
+    <div class="card-body">
+     
+      <!-- Vertically centered Modal -->
+      {{-- <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" >O'chirish</button> --}}
+      <div class="modal fade" id="verticalycentered" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hisobingizdan chiqmoqchimisiz? </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Hisobingizdan chiqaningizdan so'ng qayta kirish uchun elekron pochta va parolni terishingiz kerak.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+              <!-- Profile Edit Form -->
+              <form action="{{ route('logout') }}" method="POST" >
+                @csrf
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-danger">Chiqish</button>
+                </div>
+              </form><!-- End Profile Edit Form -->
+
+            </div>
+          </div>
+        </div>
+      </div><!-- End Vertically centered Modal-->
+
+    </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
