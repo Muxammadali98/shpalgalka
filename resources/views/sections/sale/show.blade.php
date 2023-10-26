@@ -39,6 +39,7 @@
                   <th scope="col">Sotuvchi</th>
                   <th scope="col">Mijoz Raqami</th>
                   <th scope="col">Miqdori</th>
+                  <th scope="col">Muddati</th>
                   <th scope="col">Rasim</th>
                   <th scope="col">Mahsulot Nomi </th>
                   <th scope="col">Mahsulot articl </th>
@@ -52,6 +53,7 @@
                     <td>{{ $product->sale->saller->name }}</td>
                     <td>{{ $product->sale->phone }}</td>
                     <td>{{ $product->count . ' ta' }}</td>
+                    <td>{{ $product->date . ' oy' }}</td>
                     <td><img  style="height: 100px;" src="{{ !empty($product->data['title_uz'])?$product->data['image']:''}}" alt=""></td>
                     <td>{{ !empty($product->data['title_uz'])?$product->data['title_uz']:'5'}}</td>
                     <td>{{ !empty($product->data['title_uz'])?$product->data['article']:'5'}}</td>
